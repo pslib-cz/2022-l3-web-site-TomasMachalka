@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/KU8eozPI)
 # Název mého web-projektu
-Práce se zabývá vytvořením webových stránek ...
+Práce se zabývá vytvořením webových stránek propagujících autorovu ročníkovou práci – audioverzi R.U.R.
 
 Nezapomenu upravit odkazy a "aktivovat" GitHub Pages... 
 [Webová stránka s ukázkovou implemetací](https://pslib-cz.github.io/<SEM_VKLADAM_NAZEV_PROJEKTU>/)
