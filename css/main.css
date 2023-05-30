@@ -1,0 +1,29 @@
+* {
+    font-family: 'Lexend', sans-serif;
+    margin: 0em;
+    padding: 0em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+.main_pic{
+    width: 20em;
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
