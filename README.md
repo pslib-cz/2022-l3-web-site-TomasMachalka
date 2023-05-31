@@ -3,7 +3,7 @@
 Práce se zabývá vytvořením webových stránek propagujících autorovu ročníkovou práci – audioverzi R.U.R.
 
 Nezapomenu upravit odkazy a "aktivovat" GitHub Pages... 
-[Webová stránka s ukázkovou implemetací](https://pslib-cz.github.io/<SEM_VKLADAM_NAZEV_PROJEKTU>/)
+[Webová stránka s ukázkovou implemetací](https://pslib-cz.github.io/2022-l3-web-site-TomasMachalka/)
 
 [Návrh webové stránky ve Figmě](https://www.figma.com/file/5A3wXIYJF7sntVui5su6He/R.U.R.-web?type=design&node-id=0%3A1&t=1ayRpG3Q5sJ7p0y5-1)
 
