@@ -1,0 +1,136 @@
+* {
+    font-family: 'Lexend', sans-serif;
+    margin: 0em;
+    padding: 0em;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+menu{
+    list-style-type:none;
+    background-color: black;
+}
+
+.uvod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    background-image: url(../img/photos/dynamicky_mic_bgrnd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1em;
+}
+
+.uvod div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+a:visited{
+    color: white;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #828282;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+.button:hover{
+    background-color: #EF5600;
+}
+
+
+.main_pic{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_o_dramatu{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.clanek{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.main_o_dramatu img{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    gap: 2em;
+}
+
+footer section{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+footer dt{
+    font-size: 25px;
+}
+
+@media (min-width: 675px) {
+    .uvod {
+        flex-direction: row;
+        padding: 5em;
+    }
+
+    .main_pic{
+        width: 30%;
+    }
+
+    .main_o_dramatu{
+        padding: 2em 10em;
+    }
+
+    .clanek{
+        flex-direction: row;
+    }
+
+    .clanek_img{
+        align-items: center;
+        display: flex;
+        width: 100%;
+    }
+
+    footer section{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0em 5em;
+    }
+
+    .RUR{
+        text-align: left;
+    }
+    .DB{
+        text-align: right;
+    }
+}
