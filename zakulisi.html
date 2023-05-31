@@ -6,16 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <title>R.U.R. – zákulisí</title>
 </head>
 <body>
     <header>
-        <menu>
-            <li class="nav_item"><a class="nav_link" href="./index.html">R.U.R.</a></li>
-            <li class="nav_item"><a class="nav_link" href="./zakulisi.html">ZÁKULISÍ</a></li>
-            <li class="nav_item"><a class="nav_link" href="./kontakt.html">KONTAKT</a></li>
-        </menu>
-        <section>
+        <section class="hamburger">
+            <menu class="navbar__menu nav_list">
+                <li class="nav_item"><a class="nav_link" href="./index.html">R.U.R.</a></li>
+                <li class="nav_item"><a class="nav_link" href="./zakulisi.html">ZÁKULISÍ</a></li>
+                <li class="nav_item"><a class="nav_link" href="./kontakt.html">KONTAKT</a></li>
+            </menu>
+
+
+
+            <label class="navbar__hamburger" for="toggle">
+                <a class="hamburger-menu" href="javascript:void(0)">
+                    <img src="./img/icons/settings.svg" alt="Ozubené kolečko">
+                </a>
+            </label>
+
+            <script>
+                const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+                document.querySelector("body").onclick = (e) => {
+                    const menus = document.querySelectorAll(".nav-list");
+                    for (const menu of menus) {
+                        menu.classList.add("navbar__menu--hidden");
+                    }
+                }
+                for (const btn of hamburgerButtons) {
+                    btn.onclick = (event) => {
+                        event.stopPropagation()
+                        const menus = document.querySelectorAll(".nav_list");
+                        for (const menu of menus) {
+                            menu.classList.toggle("navbar__menu--hidden");
+                        }
+                    }
+                }
+            </script>
+        </section>
             <div>
                 <h1>Zákulisí</h1>
                 <p>Jak práce vznikala? Jaká technika byla použita? Nahlédněte do střižny a podívejte se, jak se taková nahrávka tvoří.</p>

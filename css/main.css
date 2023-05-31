@@ -8,12 +8,23 @@ a {
     text-decoration: none;
 }
 
+menu{
+    list-style-type:none;
+    background-color: black;
+}
+
+
+
+
 a:visited{
     color: white;
 }
 
 .main_pic{
-    width: 20em;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img{
