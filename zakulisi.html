@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js"></script>
     <title>R.U.R. – zákulisí</title>
 </head>
 <body>
@@ -56,8 +58,33 @@
    <main>
         <section>
             <h2>Produkční tým</h2>
+            <article>
+                <div>
+                    <p>Režie a zpracování:</p>
+                    <p>Tomáš Machálka</p>
+                </div>
+                <div>
+                    <p>Technické konzultace a zvuk</p>
+                    <p>Jan Odvárka</p>
+                </div>
+                <dl>
+                    <dt>Obsazení:</dt>
+                    <dd>Helena Gloryová: Zuzana Zápotocká</dd>
+                    <dd>Ředitel Henry Domin: Tomáš Machálka</dd>
+                    <dd>Robotka Sulla: Terezie Lenková</dd>
+                    <dd>Robot Marius/Ing. Fabry: Jozef Kováč</dd>
+                    <dd>Dr. Gall: Sam Channoufi</dd>
+                    <dd>Dr. Hallemeier: Filip Novák</dd>
+                    <dd>Konzul Busman: Jan Odvárka</dd>
+                    <dd>Stavitel Alquist: Kryštof Susa</dd>
+                </dl>
+                <div>
+                    <p>Hudba:</p>
+                    <p>Tomáš Machálka</p>
+                </div>
+            </article>
         </section>
-        <section class="main_o_dramatu">
+        <section class="main_o_dramatu tech">
             <h2>Technické náležitosti</h2>
             <article class="clanek">
                 <div>
@@ -75,15 +102,32 @@
         </section>
         <section class="main_o_dramatu">
             <h2>Galerie</h2>
-            <div class="grid">
-                <img class="grid_item" src="./img/photos/Hrdí inženýři.jpg" alt="Hrdí inženýři">
-                <img class="grid_item" src="./img/photos/Sam a Zuzana.jpg" alt="Sam Channoufi a Zuzana Zápotocká">
-                <img class="grid_item" src="./img/photos/Sam orez.jpg" alt="Sam Channoufi">
-                <img class="grid_item" src="./img/photos/Společná sobota ořez.jpg" alt="Tvůrčí tým">
-                <img class="grid_item" src="./img/photos/Společná.jpg" alt="Obsazení R.U.R.">
-                <img class="grid_item" src="./img/photos/Zuzana a ostatní.jpg" alt="Zuzana Zápotocká">
-            </div>
+            <div class="grid" id="lightgallery">
+                <a class="grid-item" href="./img/photos/Hrdí inženýři.jpg">
+                  <img src="./img/photos/Hrdí inženýři.jpg" alt="Image 1">
+                </a>
+                <a class="grid-item" href="./img/photos/Sam a Zuzana.jpg">
+                  <img src="./img/photos/Sam a Zuzana.jpg" alt="Image 2">
+                </a>
+                <a class="grid-item" href="./img/photos/Sam orez.jpg">
+                  <img src="./img/photos/Sam orez.jpg" alt="Image 3">
+                </a>
+                <a class="grid-item" href="./img/photos/Společná sobota ořez.jpg">
+                  <img src="./img/photos/Společná sobota ořez.jpg" alt="Image 4">
+                </a>
+                <a class="grid-item" href="./img/photos/Společná.jpg">
+                  <img src="./img/photos/Společná.jpg" alt="Image 5">
+                </a>
+                <a class="grid-item" href="./img/photos/Zuzana a ostatní.jpg">
+                  <img src="./img/photos/Zuzana a ostatní.jpg" alt="Image 6">
+                </a>
+              </div>
         </section>
+
+        <script>
+            lightGallery(document.getElementById('lightgallery'));
+        </script>
+
    </main>
     <footer>
         <section>

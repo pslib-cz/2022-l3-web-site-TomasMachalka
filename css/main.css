@@ -3,10 +3,22 @@
     margin: 0em;
     padding: 0em;
     font-weight: 500;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: 600;
 }
 
 a {
     text-decoration: none;
+    outline: none;
 }
 
 menu{
@@ -79,6 +91,16 @@ a:visited{
 
 img{
     width: 100%;
+}
+
+.clanek div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tech{
+    background-color: #E3E3E3;
 }
 
 footer{

@@ -5,12 +5,6 @@
     padding: 1em;
   }
 
-  .grid-item {
-    background-color: #ddd;
-    padding: 20px;
-    text-align: center;
-  }
-
   @media (min-width: 675px) {
     .grid {
         display: grid;
