@@ -44,6 +44,11 @@ menu{
     gap: 0.5em;
 }
 
+.zakulisi{
+    align-items: start;
+    background-image: url(../img/photos/Společná_bgrnd.jpg);
+}
+
 a:visited{
     color: white;
 }
@@ -101,6 +106,14 @@ img{
 
 .tech{
     background-color: #E3E3E3;
+    padding: 2em;
+}
+
+.prod{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
 }
 
 footer{
@@ -132,7 +145,7 @@ footer dt{
     }
 
     .main_o_dramatu{
-        padding: 2em 10em;
+        padding: 2em 7em;
     }
 
     .clanek{
