@@ -56,7 +56,7 @@
 }
 
 .navbar__menu.navbar__menu--hidden{
-    transform:translateY(-25%)
+    transform:translateY(-55%)
 }
 
 @media (min-width: 675px) {

@@ -21,9 +21,14 @@
     
                 <label class="navbar__hamburger" for="toggle">
                     <a class="hamburger-menu" href="javascript:void(0)">
-                        <img src="./img/icons/settings.svg" alt="Ozubené kolečko">
+                        <img class="wheel" src="./img/icons/settings.svg" alt="Ozubené kolečko" onclick="rotateImage(this)">
                     </a>
                 </label>
+                <script>
+                    function rotateImage(image) {
+                      image.classList.toggle('rotate');
+                    }
+                </script>
 
                 <script>
                     const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
