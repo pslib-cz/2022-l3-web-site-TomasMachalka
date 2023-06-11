@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/grid.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js"></script>
     <title>R.U.R. – zákulisí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-autoplay.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-comments.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-rotate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-share.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-thumbnail.min.css">
 </head>
 <body>
     <header>
@@ -21,13 +26,16 @@
                 <li class="nav_item"><a class="nav_link" href="./kontakt.html">KONTAKT</a></li>
             </menu>
 
-
-
             <label class="navbar__hamburger" for="toggle">
-                <a class="hamburger-menu" href="javascript:void(0)">
-                    <img src="./img/icons/settings.svg" alt="Ozubené kolečko">
-                </a>
-            </label>
+                    <a class="hamburger-menu" href="javascript:void(0)">
+                        <img class="wheel" src="./img/icons/settings.svg" alt="Ozubené kolečko" onclick="rotateImage(this)">
+                    </a>
+                </label>
+                <script>
+                    function rotateImage(image) {
+                      image.classList.toggle('rotate');
+                    }
+                </script>
 
             <script>
                 const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
@@ -53,7 +61,6 @@
                 <p>Jak práce vznikala? Jaká technika byla použita? Nahlédněte do střižny a podívejte se, jak se taková nahrávka tvoří.</p>
                 <p>Seznamte se s herci, kteří ztvárnili Čapkovy známé role.</p>
             </div>
-        </section>
     </header>
    <main>
         <section class="main_o_dramatu">
@@ -102,31 +109,53 @@
         </section>
         <section class="main_o_dramatu">
             <h2>Galerie</h2>
-            <div class="grid" id="lightgallery">
-                <a class="grid-item" href="./img/photos/Hrdí inženýři.jpg">
-                  <img src="./img/photos/Hrdí inženýři.jpg" alt="Image 1">
+            <div class="grid" id="gallery">
+                <a href="./img/photos/Hrdí inženýři.jpg" data-lg-size="1000-600"
+                    data-lg-thumbnail="./img/photos/Hrdí inženýři.jpg">
+                    <img src="./img/photos/Hrdí inženýři.jpg">
                 </a>
-                <a class="grid-item" href="./img/photos/Sam a Zuzana.jpg">
-                  <img src="./img/photos/Sam a Zuzana.jpg" alt="Image 2">
+                <a href="./img/photos/Sam a Zuzana.jpg" data-lg-size="1000-600"
+                    data-lg-thumbnail="./img/photos/Sam a Zuzana.jpg">
+                    <img src="./img/photos/Sam a Zuzana.jpg">
                 </a>
-                <a class="grid-item" href="./img/photos/Sam orez.jpg">
-                  <img src="./img/photos/Sam orez.jpg" alt="Image 3">
+                <a href="./img/photos/Sam orez.jpg" data-lg-size="1000-600"
+                    data-lg-thumbnail="./img/photos/Sam orez.jpg">
+                    <img src="./img/photos/Sam orez.jpg">
                 </a>
-                <a class="grid-item" href="./img/photos/Společná sobota ořez.jpg">
-                  <img src="./img/photos/Společná sobota ořez.jpg" alt="Image 4">
+                <a href="./img/photos/Společná sobota ořez.jpg" data-lg-size="1000-600"
+                    data-lg-thumbnail="./img/photos/Společná sobota ořez.jpg">
+                    <img src="./img/photos/Společná sobota ořez.jpg">
                 </a>
-                <a class="grid-item" href="./img/photos/Společná.jpg">
-                  <img src="./img/photos/Společná.jpg" alt="Image 5">
+                <a href="./img/photos/Společná.jpg" data-lg-size="1000-600"
+                    data-lg-thumbnail="./img/photos/Společná.jpg">
+                    <img src="./img/photos/Společná.jpg">
                 </a>
-                <a class="grid-item" href="./img/photos/Zuzana a ostatní.jpg">
-                  <img src="./img/photos/Zuzana a ostatní.jpg" alt="Image 6">
+                <a href="./img/photos/Zuzana a ostatní.jpg" data-lg-size="1000-600"
+                    data-lg-thumbnail="./img/photos/Zuzana a ostatní.jpg">
+                    <img src="./img/photos/Zuzana a ostatní.jpg">
                 </a>
               </div>
         </section>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.min.js"></script>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/rotate/lg-rotate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/share/lg-share.min.js"></script>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js"></script>
         <script>
-            lightGallery(document.getElementById('lightgallery'));
-        </script>
+        lightGallery(document.getElementById('gallery'), {
+            plugins: [lgThumbnail, lgZoom, lgFullscreen, lgShare, lgRotate, lgAutoplay],
+            download: true,
+            controls: true,
+            thumbWidth: 100,
+            thumbHeight: 100
+        });
+    </script>
 
    </main>
     <footer>

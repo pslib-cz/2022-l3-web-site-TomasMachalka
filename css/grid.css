@@ -1,13 +1,11 @@
 .grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 1em;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
 
-  @media (min-width: 675px) {
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+@media (min-width: 675px) {
+  .grid {
+      grid-template-columns: repeat(3, 1fr);
   }
+}
